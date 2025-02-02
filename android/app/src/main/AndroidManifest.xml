@@ -1,8 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <!--usesCleartextTraffic: http 요청을 android에서 받을 수 있도록 설정 (개발 시에만 사용하고 배포할 때는 제거)-->
     <application
+      android:usesCleartextTraffic="true"
       android:name=".MainApplication"
       android:label="@string/app_name"
       android:icon="@mipmap/ic_launcher"
